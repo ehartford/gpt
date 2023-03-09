@@ -2,6 +2,8 @@
 
 This is my first gpt, I adapted it from Andrej Karpathy's excellent video [Let's build GPT: from scratch, in code, spelled out.](https://youtu.be/kCc8FmEb1nY)  I refactored to separate training from generating and also added configuration.
 
+This is tested and works in both native Windows and WSL2 Ubuntu.
+
 I have Windows, and an AMD Radeon 6800 XT, and I wanted to use it to train a gpt, but Cuda doesn't work with Radeon, and ROCm only works in Linux.
 
 The solution is [DirectML](https://learn.microsoft.com/en-us/windows/ai/directml/gpu-pytorch-windows). So this code targets DirectML but it would be a small change to switch it to cuda, ROCm, or any other pytorch backend.
